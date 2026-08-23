@@ -1,0 +1,20 @@
+[
+  {
+    "id": "proj-001",
+    "title": "Clinical NGS Variant Annotator & Diagnostic Pipeline",
+    "date": "August 2026",
+    "problem": "Engineered an automated Python-based bioinformatics pipeline to ingest targeted NGS variant panels. Integrated the Ensembl REST API to filter out benign background SNPs and mapped disease-causing variants to severe hematological disorders.",
+    "tools": ["Python", "Ensembl API", "Bioinformatics", "Genomic Annotation"],
+    "githubLink": "https://github.com/farhanali-researcher",
+    "featured": true
+  },
+  {
+    "id": "proj-002",
+    "title": "Genomic Sequence Analysis & Annotation Pipeline",
+    "date": "July 2026",
+    "problem": "Engineered an automated pipeline using Python and Biopython for sequence analysis. Integrated BLAST algorithms with NCBI databases for precise gene-finding, translating complex biological datasets into reproducible R scripts (ggplot2) for statistical visualization.",
+    "tools": ["Python", "Biopython", "BLAST", "R (ggplot2)", "NCBI"],
+    "githubLink": "https://github.com/farhanali-researcher",
+    "featured": true
+  }
+]
