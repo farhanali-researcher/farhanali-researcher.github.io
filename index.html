@@ -3,392 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Ali | Portfolio</title>
-    <!-- Adding FontAwesome for Icons -->
+    <title>Farhan Ali | Medical Laboratory Technologist & Researcher</title>
+    <meta name="description" content="Portfolio of Farhan Ali, a Medical Laboratory Technologist specializing in molecular diagnostics, bioinformatics, and precision medicine research.">
+    
+    <!-- Premium Typography: Inter for UI, Merriweather for Academic Serif touches -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-        :root {
-            --primary: #0f172a; /* Deep Slate */
-            --secondary: #1e293b; 
-            --accent: #2563eb; /* Vibrant Blue */
-            --accent-hover: #1d4ed8;
-            --text-dark: #334155;
-            --text-light: #94a3b8;
-            --bg-body: #f8fafc;
-            --bg-card: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--bg-body);
-            color: var(--text-dark);
-            line-height: 1.7;
-        }
-
-        /* Navigation */
-        nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1.2rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .nav-links a {
-            color: var(--text-dark);
-            text-decoration: none;
-            margin-left: 2rem;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
-            margin-top: 60px;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            letter-spacing: -1px;
-        }
-
-        .hero h2 {
-            font-size: 1.5rem;
-            color: #cbd5e1;
-            font-weight: 400;
-            margin-bottom: 2rem;
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            transition: color 0.3s;
-            display: inline-block;
-        }
-
-        .social-icons a:hover {
-            color: var(--accent);
-            transform: translateY(-3px);
-        }
-
-        /* Container & Sections */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 3rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            width: 60px;
-            height: 4px;
-            background: var(--accent);
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 2px;
-        }
-
-        /* Grid Layouts */
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        /* Cards */
-        .card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #e2e8f0;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-        }
-
-        .card-icon {
-            font-size: 2rem;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-        }
-
-        .card h3 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .card .date {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-
-        /* Skills Tags */
-        .skills-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 1rem;
-        }
-
-        .skill-tag {
-            background: #eff6ff;
-            color: var(--accent);
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            border: 1px solid #bfdbfe;
-        }
-
-        ul.custom-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        ul.custom-list li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 10px;
-        }
-
-        ul.custom-list li::before {
-            content: '\f105'; /* FontAwesome angle-right */
-            font-family: 'FontAwesome';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .grid-2 { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.8rem; }
-            .nav-links { display: none; /* Can add hamburger menu later */ }
-        }
-    </style>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="#" class="logo">Farhan<span>Ali</span></a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Farhan Ali<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">Profile</a>
+                <a href="#research">Research</a>
+                <a href="#clinical">Clinical</a>
+                <a href="#credentials">Credentials</a>
+            </div>
+            <a href="assets/documents/Farhan_Ali_CV.pdf" target="_blank" class="btn btn-outline">Download CV</a>
         </div>
     </nav>
 
-    <header class="hero" id="home">
+    <header class="hero">
+        <div class="hero-pattern"></div>
         <div class="hero-content">
-            <h1>Farhan Ali</h1>
-            <h2>Medical Laboratory Technologist | Computational Biology</h2>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #e2e8f0;">Bridging the gap between clinical pathology and genomic data to advance precision medicine.</p>
-            <div class="social-icons">
-                <a href="mailto:farhanali.mlt010@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/farhanali010" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/farhanali-researcher" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <p class="hero-subtitle">Medical Laboratory Technologist</p>
+            <h1 class="hero-title">Advancing precision medicine through clinical pathology and computational biology.</h1>
+            <p class="hero-text">Bridging wet-lab diagnostics with multi-omics and AI to improve patient outcomes. Currently focused on human genetics, bioinformatics, and molecular diagnostics.</p>
+            <div class="hero-cta">
+                <a href="#research" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="research-tags">
+                <span>Genomics</span>
+                <span>Molecular Diagnostics</span>
+                <span>Bioinformatics</span>
+                <span>Hematology</span>
+                <span>AI in Healthcare</span>
             </div>
         </div>
     </header>
 
-    <div class="container" id="about">
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="grid-3">
-            <div class="card">
-                <i class="fa-solid fa-dna card-icon"></i>
-                <h3>Bioinformatics & Genomics</h3>
-                <p>Developing automated pipelines using Python, Biopython, and integrating REST APIs (Ensembl, NCBI) to query international genomic databases.</p>
-                <div class="skills-wrapper">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Linux/Bash</span>
-                    <span class="skill-tag">BLAST</span>
-                </div>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-flask-vial card-icon"></i>
-                <h3>Clinical Diagnostics</h3>
-                <p>Extensive wet lab experience across hematology, microbiology, serology, and molecular biology (PCR) in high-throughput hospital settings.</p>
-                <div class="skills-wrapper">
-                    <span class="skill-tag">PCR</span>
-                    <span class="skill-tag">Hematology</span>
-                    <span class="skill-tag">QA/QC</span>
-                </div>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-chart-line card-icon"></i>
-                <h3>Biostatistics</h3>
-                <p>Translating complex clinical datasets into publication-ready visualizations and performing advanced data analysis.</p>
-                <div class="skills-wrapper">
-                    <span class="skill-tag">R Studio</span>
-                    <span class="skill-tag">SPSS v27</span>
-                    <span class="skill-tag">ANOVA</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="projects" style="background-color: white; border-radius: 20px; padding: 4rem;">
-        <h2 class="section-title">Featured Research & Projects</h2>
-        <div class="grid-2">
-            <div class="card">
-                <span class="date">Aug 2026</span>
-                <h3>Clinical NGS Variant Annotator</h3>
-                <p>Engineered an automated Python-based bioinformatics pipeline to ingest targeted Next-Generation Sequencing (NGS) variant panels. Integrated the Ensembl REST API to filter benign SNPs and map disease-causing variants to Beta-Thalassemia and Sickle Cell Disease.</p>
-            </div>
-            <div class="card">
-                <span class="date">Jul 2026</span>
-                <h3>Genomic Sequence Analysis Pipeline</h3>
-                <p>Built a bioinformatics pipeline using Python and Biopython for advanced molecular characterization. Integrated BLAST algorithms for structural stability analysis and utilized R (ggplot2) for statistical data visualizations.</p>
-            </div>
-            <div class="card" style="grid-column: 1 / -1;">
-                <span class="date">2025 - 2026 | Thesis Research</span>
-                <h3>Pediatric Thalassemia Research Study</h3>
-                <p>Designed and executed a descriptive cross-sectional study evaluating psychosocial challenges and caregiver burden in children with Transfusion-Dependent Beta Thalassemia. Analyzed data for 200 child-parent dyads. Manuscript submitted to <em>Thalassemia Reports</em>.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="experience">
-        <h2 class="section-title">Clinical Experience</h2>
-        <div class="card" style="margin-bottom: 2rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                <h3>City Medical Welfare Laboratory</h3>
-                <span class="date" style="margin: 0;">2025 - 2026 | Peshawar</span>
-            </div>
-            <ul class="custom-list">
-                <li>Managed high-throughput specimen processing and diagnostic testing in a fast-paced environment.</li>
-                <li>Executed routine and urgent assays across hematology, biochemistry, and serology.</li>
-                <li>Maintained strict chain-of-custody protocols and conducted precise phlebotomy.</li>
-            </ul>
-        </div>
+    <main class="container">
         
-        <div class="card">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                <h3>Lady Reading Hospital (LRH)</h3>
-                <span class="date" style="margin: 0;">2024 - 2025 | Peshawar</span>
-            </div>
-            <ul class="custom-list">
-                <li>Rotated through all core diagnostic departments in a premier tertiary care hospital, processing 80+ specimens per shift.</li>
-                <li>Gained hands-on expertise in automated clinical chemistry, hematology (Hb electrophoresis), and microbiology.</li>
-                <li>Participated in specialized training for Molecular Biology (PCR), Histopathology, and Blood Bank cross-matching.</li>
-            </ul>
-        </div>
-    </div>
+        <!-- About & Education Section -->
+        <section id="about" class="section">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title">Academic Profile</h2>
+                    <p class="bio-text">As a Medical Laboratory Technology graduate, my foundation is built on rigorous clinical methodologies and diagnostic accuracy. Recognizing the shift toward data-driven healthcare, I am actively integrating computational biology and bioinformatics into my analytical skill set. My objective is to contribute to global research addressing the molecular basis of chronic human diseases.</p>
+                    
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <h3>BS Medical Laboratory Technology</h3>
+                            <span class="edu-date">2021 — 2025</span>
+                        </div>
+                        <p class="edu-inst">Institute of Paramedical Sciences, Khyber Medical University</p>
+                        <ul class="edu-highlights">
+                            <li><strong>CGPA:</strong> 3.69/4.00</li>
+                            <li><strong>Honors:</strong> Stoori Da Pakhtunkhwa Academic Award</li>
+                            <li><strong>Merit:</strong> Prime Minister's Youth Laptop Scheme Awardee</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-architecture">
+                    <h2 class="section-title">Technical Architecture</h2>
+                    
+                    <h4 class="skill-category">Clinical Laboratory</h4>
+                    <div class="tag-group">
+                        <span class="tag">Molecular Diagnostics (PCR)</span>
+                        <span class="tag">Hematology & Morphology</span>
+                        <span class="tag">Transfusion Medicine</span>
+                        <span class="tag">Clinical Chemistry</span>
+                    </div>
 
-    <div class="container" id="education" style="background-color: white; border-radius: 20px; padding: 4rem;">
-        <h2 class="section-title">Education & Achievements</h2>
-        <div class="grid-2">
-            <div class="card">
-                <i class="fa-solid fa-graduation-cap card-icon"></i>
-                <h3>BS Medical Laboratory Technology</h3>
-                <p style="color: var(--text-light); margin-bottom: 1rem;">Khyber Medical University (IPMS)</p>
-                <ul class="custom-list">
-                    <li>CGPA: 3.69/4.00 (Top 6 in class)</li>
-                    <li>Perfect 4.0 GPA in final two semesters</li>
-                    <li>Prime Minister's Laptop Scheme Awardee (Phase IV)</li>
-                    <li>Thesis Defense Commendation (2026)</li>
-                </ul>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-certificate card-icon"></i>
-                <h3>Certifications & Leadership</h3>
-                <ul class="custom-list">
-                    <li>Aspire Leadership Program (Cohort 3), Aspire Institute</li>
-                    <li>Bioinformatics for Biologists (Wellcome Connecting Science)</li>
-                    <li>AI Fundamentals (University of Bristol)</li>
-                    <li>Active Memberships: ASCP, ASM, AACR, AMP</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                    <h4 class="skill-category">Computational & Data</h4>
+                    <div class="tag-group">
+                        <span class="tag">Python (Biopython)</span>
+                        <span class="tag">R & ggplot2</span>
+                        <span class="tag">Linux/Bash Scripting</span>
+                        <span class="tag">SPSS Statistical Analysis</span>
+                    </div>
 
-    <footer>
-        <p>&copy; 2026 Farhan Ali. Designed for Precision Medicine & Computational Biology.</p>
+                    <h4 class="skill-category">Research & Bioinformatics</h4>
+                    <div class="tag-group">
+                        <span class="tag">Genomic Sequence Analysis</span>
+                        <span class="tag">Variant Annotation</span>
+                        <span class="tag">BLAST & NCBI Pipelines</span>
+                        <span class="tag">Scientific Communication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Publications Section -->
+        <section id="publications" class="section">
+            <h2 class="section-title">Publications & Manuscripts</h2>
+            <div id="publications-container" class="data-grid">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Dynamic Projects Section -->
+        <section id="research" class="section">
+            <h2 class="section-title">Computational Projects & Case Studies</h2>
+            <div id="projects-container" class="grid-2">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Clinical Experience -->
+        <section id="clinical" class="section">
+            <h2 class="section-title">Clinical Laboratory Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Starting September 2026</span>
+                        <h3>Clinical Laboratory Intern</h3>
+                        <p class="timeline-org">Alkhidmat Blood Bank and Diagnostic Center, Peshawar</p>
+                        <p>Incoming intern focusing on comprehensive diagnostic laboratory workflows, rapid-response testing, and blood banking protocols.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — 2025</span>
+                        <h3>Clinical Residency Rotation</h3>
+                        <p class="timeline-org">Lady Reading Hospital MTI, Peshawar</p>
+                        <p>Completed intensive core rotations across a premier tertiary care hospital processing high-throughput clinical specimens.</p>
+                        <ul class="timeline-tasks">
+                            <li><strong>Hematology:</strong> CBC, smear examination, ESR, coagulation profiles, Hb electrophoresis.</li>
+                            <li><strong>Microbiology & Serology:</strong> Culture techniques, biochemical testing, ELISA.</li>
+                            <li><strong>Molecular Biology:</strong> Practical exposure to PCR-based diagnostic workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Credentials Section -->
+        <section id="credentials" class="section">
+            <div class="credentials-header">
+                <h2 class="section-title">Digital Credential Library</h2>
+                <div class="filters" id="cert-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Genomics">Genomics</button>
+                    <button class="filter-btn" data-filter="Bioinformatics">Bioinformatics</button>
+                    <button class="filter-btn" data-filter="Laboratory">Laboratory</button>
+                    <button class="filter-btn" data-filter="Memberships">Memberships</button>
+                </div>
+            </div>
+            <div id="certificates-container" class="grid-3">
+                <!-- Injected via JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Farhan Ali</h2>
+            <p>Medical Laboratory Technologist</p>
+            <div class="social-links">
+                <a href="mailto:farhanali.mlt010@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/farhanali010" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/farhanali-researcher" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Farhan Ali. Engineered for Precision Medicine.</p>
+        </div>
     </footer>
 
+    <!-- Certificate Modal -->
+    <div id="cert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/app.js"></script>
 </body>
 </html>
