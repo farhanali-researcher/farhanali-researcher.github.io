@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cert-001",
+    "title": "Bioinformatics for Biologists: An Introduction to Linux, Bash Scripting, and R",
+    "issuer": "Wellcome Connecting Science",
+    "category": "Bioinformatics",
+    "date": "August 2026",
+    "file": "assets/certificates/bioinformatics/wellcome-bioinformatics-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-002",
+    "title": "Aspire Leadership Program (Cohort 3)",
+    "issuer": "Aspire Institute",
+    "category": "Professional",
+    "date": "July 2026",
+    "file": "assets/certificates/professional/aspire-leadership-2026.pdf",
+    "featured": true
+  }
+]
