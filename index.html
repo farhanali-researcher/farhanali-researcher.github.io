@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan Ali | Portfolio </title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #ebf8ff;
+            --text-main: #2d3748;
+            --text-light: #4a5568;
+            --bg-color: #f7fafc;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-links a, .contact-links span {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+
+        nav {
+            background-color: var(--white);
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .item-block {
+            margin-bottom: 2rem;
+        }
+
+        .item-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .item-header h3 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+        }
+
+        .item-header span {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .item-meta {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .item-header {
+                flex-direction: column;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Farhan Ali </h1>
+        <h2>Medical Laboratory Technologist </h2>
+        <div class="contact-links">
+            <a href="mailto:farhanali.mlt010@gmail.com">farhanali.mlt010@gmail.com </a>
+            <span>+92 315 8189349 </span>
+            <span>Malakand, Khyber Pakhtunkhwa, Pakistan </span>
+            <a href="https://linkedin.com/in/farhanali010" target="_blank">LinkedIn </a>
+            <a href="https://github.com/farhanali-researcher" target="_blank">GitHub </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research & Projects</a>
+        <a href="#clinical">Clinical Experience</a>
+        <a href="#skills">Skills & Certifications</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>Research-oriented Medical Laboratory Technology graduate with a strong academic background in biomedical sciences and a keen interest in molecular biology and genetics . Experienced in research methodology, scientific literature analysis, and data interpretation . Eager to contribute to innovative research addressing the molecular basis of human diseases and advancing precision medicine .</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Bachelor of Science in Medical Laboratory Technology (BS MLT) </h3>
+                    <span>2021 - 2025 </span>
+                </div>
+                <div class="item-meta">Khyber Medical University (KMU), Institute of Paramedical Sciences (IPMS), Peshawar </div>
+                <ul>
+                    <li>CGPA: 3.69/4.0 </li>
+                    <li>Academic Standing: Ranked among top 6 students of the class </li>
+                </ul>
+            </div>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Higher Secondary School Certificate (F.Sc Pre-Medical) </h3>
+                    <span>2019 - 2021 </span>
+                </div>
+                <div class="item-meta">Government Higher Secondary School Sakhakot | Malakand </div>
+                <ul>
+                    <li>Marks: 960/1100 </li>
+                    <li>Academic Standing: College 1st Position Holder </li>
+                </ul>
+            </div>
+
+            <h2 style="margin-top: 3rem;">Academic Achievements</h2>
+            <ul>
+                <li><strong>Thesis Defense Commendation (2026):</strong> Successfully defended undergraduate research thesis with formal appreciation and high praise from external academic examiners at KMU IPMS .</li>
+                <li><strong>Academic Excellence (2025):</strong> Achieved a perfect 4.0 GPA across the final two academic semesters (7th and 8th) .</li>
+                <li><strong>Prime Minister's Laptop Scheme (Phase IV, 2025):</strong> Awarded on academic merit by the Government Of Pakistan .</li>
+                <li><strong>Board Topper / Early Education Honors (2021):</strong> Stoori Da Pakhtunkhwa Program Honoree, Board of Intermediate and Secondary Education Malakand .</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Experience & Academic Projects</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Undergraduate Research Thesis </h3>
+                    <span>2025 - 2026 </span>
+                </div>
+                <div class="item-meta">Supervisor: Mr. Awal Mir  | KMU Institute of Paramedical Sciences </div>
+                <p><strong>Title:</strong> Psychosocial Challenges and Quality of Life in Children with Transfusion Dependent Beta Thalassemia and Associated Burden on Their Parents/Guardians .</p>
+                <ul>
+                    <li>Designed and executed a descriptive cross-sectional study, recruiting a clinical sample of 200 child-parent dyads .</li>
+                    <li>Administered structured bilingual interviews utilizing validated tools, including the PedsQLT™ 4.0 Generic Core Scale and the Zarit Burden Interview .</li>
+                    <li>Processed complex clinical data using SPSS (Version 27) and Microsoft Excel; executed advanced data analysis scripts within R Studio .</li>
+                    <li>Revealed strong negative correlations between psychosocial difficulties and quality of life .</li>
+                    <li><strong>Submitted Manuscript:</strong> Co-authored manuscript submitted for publication to <em>Thalassemia Reports</em> (2026) .</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Clinical NGS Variant Annotator & Diagnostic Pipeline </h3>
+                    <span>Aug 2026 </span>
+                </div>
+                <div class="item-meta">Independent Bioinformatics Project | Hosted on GitHub </div>
+                <ul>
+                    <li>Engineered an automated Python-based bioinformatics pipeline to ingest targeted Next-Generation Sequencing (NGS) variant panels .</li>
+                    <li>Integrated the Ensembl REST API to query international genomic databases and filter out benign background single-nucleotide polymorphisms (SNPs) .</li>
+                    <li>Automated clinical phenotype extraction mapping disease-causing variants to Beta-Thalassemia and Sickle Cell Disease .</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Genomic Sequence Analysis & Annotation Pipeline </h3>
+                    <span>Jul 2026 </span>
+                </div>
+                <div class="item-meta">Independent Bioinformatics Project | Hosted on GitHub </div>
+                <ul>
+                    <li>Engineered an automated bioinformatics pipeline using Python and the Biopython framework .</li>
+                    <li>Integrated BLAST algorithms with NCBI genomic databases to execute precise gene-finding and structural stability analysis .</li>
+                    <li>Translated biological datasets into robust R scripts (ggplot2) generating publication-ready statistical visualizations .</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="clinical">
+            <h2>Clinical Experience</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Medical Laboratory Technologist (Internship) </h3>
+                    <span>2025 - 2026 </span>
+                </div>
+                <div class="item-meta">City Medical Welfare Laboratory | Peshawar, Pakistan </div>
+                <ul>
+                    <li>Managed high-throughput specimen processing and diagnostic testing in a fast-paced laboratory .</li>
+                    <li>Executed routine and urgent assays across hematology, biochemistry, and serology .</li>
+                    <li>Conducted precise phlebotomy and maintained strict chain-of-custody protocols for clinical samples .</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <h3>Medical Laboratory Technologist (Internship) </h3>
+                    <span>2024 - 2025 </span>
+                </div>
+                <div class="item-meta">Lady Reading Hospital (LRH) | Peshawar, Pakistan </div>
+                <ul>
+                    <li>Rotated through all core diagnostic departments in a premier tertiary care hospital, processing 80+ clinical specimens per shift .</li>
+                    <li><strong>Hematology:</strong> CBC, smear examination, ESR, coagulation profiles, Hb electrophoresis .</li>
+                    <li><strong>Microbiology & Serology:</strong> Culture techniques, staining, biochemical testing, ELISA, Coombs' test .</li>
+                    <li><strong>Clinical Chemistry:</strong> Routine & special chemistry on automated analyzers .</li>
+                    <li><strong>Additional Departments:</strong> Molecular Biology (PCR), Histopathology, Blood Bank (cross-matching), Phlebotomy .</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills & Proficiencies</h2>
+            <div class="grid-container">
+                <div>
+                    <h3>Biostatistics & Programming </h3>
+                    <div class="tag-list">
+                        <span class="tag">R Studio </span>
+                        <span class="tag">Python (Biopython) </span>
+                        <span class="tag">Linux/Bash </span>
+                        <span class="tag">SPSS v27 </span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Bioinformatics & Sequence Analysis </h3>
+                    <div class="tag-list">
+                        <span class="tag">BLAST & NCBI </span>
+                        <span class="tag">Gene-finding </span>
+                        <span class="tag">AlphaFold & SWISS-MODEL </span>
+                        <span class="tag">UniProt & PDB </span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Clinical Diagnostics (Wet Lab) </h3>
+                    <div class="tag-list">
+                        <span class="tag">PCR </span>
+                        <span class="tag">Hematology </span>
+                        <span class="tag">Serology </span>
+                        <span class="tag">Blood Banking </span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 3rem;">Certifications & Training</h2>
+            <ul>
+                <li><strong>Bioinformatics for Biologists: An Introduction to Linux, Bash Scripting, and R</strong> - Wellcome Connecting Science (08/2026) .</li>
+                <li><strong>Unleash Your Potential: AI Fundamentals</strong> - University of Bristol (08/2026) .</li>
+                <li><strong>Digital PCR 101</strong> - Bio-Rad Academy (08/2026) .</li>
+                <li><strong>Writing in the Sciences</strong> - Stanford University, Coursera (07/2026) .</li>
+                <li><strong>Good Clinical Practice</strong> - NIDA Clinical Trials Network (06/2026) .</li>
+                <li><strong>PCR Skills Development & Laboratory Biosafety</strong> - KMU Hands-on Workshops (11/2025) .</li>
+            </ul>
+
+            <h2 style="margin-top: 3rem;">Leadership & Affiliations</h2>
+            <ul>
+                <li><strong>Participant, NORD Students for Rare:</strong> Engaged in rare disease advocacy and education initiatives (Aug 2026-Present) .</li>
+                <li><strong>Participant, Aspire Leadership Program (Cohort 3):</strong> Fully funded leadership development program by Aspire Institute (July 2026-Present) .</li>
+                <li><strong>Professional Memberships:</strong> ASCP, ASM, AACR, AMP, and AKmUA .</li>
+            </ul>
+            
+            <h2 style="margin-top: 3rem;">Languages</h2>
+            <ul>
+                <li><strong>English:</strong> Full Professional Proficiency (CEFR C1).</li>
+                <li><strong>Urdu & Pashto:</strong> Native / Bilingual Proficiency.</li>
+            </ul>
+            
+            <h2 style="margin-top: 3rem;">References</h2>
+            <p>Available upon request from Dr. Abdur Rehman, Dr. Ihsan Ali, or Mr. Awal Mir at Khyber Medical University.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Farhan Ali. All Rights Reserved. </p>
+    </footer>
+
+</body>
+</html>
