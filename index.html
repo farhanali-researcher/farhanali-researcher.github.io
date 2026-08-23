@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Animated Ambient Background -->
+    <!-- Subtle Ambient Background -->
     <div class="ambient-bg">
         <div class="glow-orb orb-1"></div>
         <div class="glow-orb orb-2"></div>
@@ -22,8 +22,8 @@
             <a href="#" class="logo">F.Ali<span>_</span></a>
             <div class="nav-links">
                 <a href="#about">Profile</a>
-                <a href="#research">Research</a>
                 <a href="#clinical">Clinical</a>
+                <a href="#research">Research</a>
                 <a href="#credentials">Credentials</a>
             </div>
             <a href="assets/documents/Farhan_Ali_CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
@@ -32,9 +32,9 @@
 
     <main class="wrapper">
         
-        <!-- Next-Gen Hero Section -->
-        <section class="hero-bento">
-            <div class="hero-main glass-panel fade-in">
+        <!-- Clean, Ordered Hero Section with Picture -->
+        <section class="hero glass-panel">
+            <div class="hero-content">
                 <div class="tag-badge">Medical Laboratory Technologist</div>
                 <h1 class="hero-title">Engineering the future of <span class="gradient-text">Precision Medicine</span>.</h1>
                 <p class="hero-desc">Bridging clinical pathology with computational biology, multi-omics, and AI to transform genomic data into actionable clinical insights.</p>
@@ -47,90 +47,75 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="hero-stats glass-panel fade-in delay-1">
-                <i class="fa-solid fa-dna stat-icon"></i>
-                <h3>Focus</h3>
-                <p>Genomics & Bioinformatics</p>
-            </div>
-            
-            <div class="hero-stats glass-panel fade-in delay-2">
-                <i class="fa-solid fa-microscope stat-icon"></i>
-                <h3>Clinical</h3>
-                <p>Molecular Diagnostics</p>
+            <div class="hero-image">
+                <!-- Ensure you upload your picture to this exact folder path! -->
+                <img src="assets/images/profile.jpg" alt="Farhan Ali" class="profile-pic">
             </div>
         </section>
 
-        <!-- Bento Box About Section -->
+        <!-- Organized About Section -->
         <section id="about" class="section">
-            <h2 class="section-heading">01. / System Architecture</h2>
-            <div class="bento-grid">
-                <div class="bento-card span-2 glass-panel">
-                    <h3>Academic Foundation</h3>
-                    <p class="text-muted">BS Medical Laboratory Technology — Khyber Medical University</p>
-                    <div class="metric-row">
-                        <div class="metric">
-                            <span class="metric-val">3.69</span>
-                            <span class="metric-label">CGPA</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-val">Top 6</span>
-                            <span class="metric-label">Class Rank</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-val">100%</span>
-                            <span class="metric-label">Thesis Score</span>
-                        </div>
-                    </div>
+            <h2 class="section-heading">01. / Academic Foundation & Skills</h2>
+            <div class="ordered-grid">
+                <div class="card">
+                    <i class="fa-solid fa-graduation-cap section-icon"></i>
+                    <h3>BS Medical Laboratory Technology</h3>
+                    <p class="text-muted" style="margin-bottom: 1rem;">Khyber Medical University | 2021 — 2025</p>
+                    <ul class="clean-list">
+                        <li><strong>CGPA:</strong> 3.69/4.00 (Top 6 in class)</li>
+                        <li><strong>Awards:</strong> Stoori Da Pakhtunkhwa Academic Award, PM Youth Laptop Scheme</li>
+                        <li><strong>Thesis:</strong> Commendation for research in pediatric beta-thalassemia</li>
+                    </ul>
                 </div>
                 
-                <div class="bento-card glass-panel">
-                    <h3>Tech Stack</h3>
+                <div class="card">
+                    <i class="fa-solid fa-code section-icon"></i>
+                    <h3>Technical Stack</h3>
                     <div class="pill-group">
                         <span class="pill">Python</span>
                         <span class="pill">R / ggplot2</span>
                         <span class="pill">Linux Bash</span>
                         <span class="pill">Ensembl API</span>
                         <span class="pill">Biopython</span>
+                        <span class="pill">SPSS v27</span>
                     </div>
-                </div>
-                
-                <div class="bento-card glass-panel">
-                    <h3>Wet Lab</h3>
+                    
+                    <h3 style="margin-top: 1.5rem;"><i class="fa-solid fa-flask section-icon"></i> Clinical Wet Lab</h3>
                     <div class="pill-group">
-                        <span class="pill">PCR</span>
+                        <span class="pill">Molecular Diagnostics (PCR)</span>
                         <span class="pill">Hematology</span>
-                        <span class="pill">Transfusion</span>
+                        <span class="pill">Transfusion Medicine</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Dynamic Data Sections -->
-        <section id="research" class="section">
-            <h2 class="section-heading">02. / Computational Projects</h2>
-            <div id="projects-container" class="project-grid">
-                <!-- Injected via app.js -->
-            </div>
-        </section>
-
+        <!-- Organized Clinical Track -->
         <section id="clinical" class="section">
-            <h2 class="section-heading">03. / Clinical Deployments</h2>
+            <h2 class="section-heading">02. / Clinical Deployments</h2>
             <div class="clinical-track">
-                <div class="track-item glass-panel">
+                <div class="card track-card">
                     <div class="track-header">
                         <h3>Alkhidmat Diagnostic Center</h3>
                         <span class="track-date">Starts Sept 2026</span>
                     </div>
                     <p class="text-muted">Clinical Laboratory Intern managing comprehensive diagnostic workflows and rapid-response testing protocols.</p>
                 </div>
-                <div class="track-item glass-panel">
+                <div class="card track-card">
                     <div class="track-header">
                         <h3>Lady Reading Hospital MTI</h3>
                         <span class="track-date">2024 — 2025</span>
                     </div>
                     <p class="text-muted">Completed intensive rotations processing 80+ specimens per shift across Hematology, Microbiology, Serology, and Clinical Chemistry.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Organized Dynamic Sections -->
+        <section id="research" class="section">
+            <h2 class="section-heading">03. / Computational Projects & Research</h2>
+            <div id="projects-container" class="ordered-grid">
+                <!-- Injected via app.js -->
             </div>
         </section>
 
@@ -154,7 +139,7 @@
         <p>Engineered for Precision Medicine.</p>
     </footer>
 
-    <!-- Certificate Modal (Hidden by default) -->
+    <!-- Certificate Modal -->
     <div id="cert-modal" class="modal">
         <div class="modal-content glass-panel">
             <span class="close-modal">&times;</span>
