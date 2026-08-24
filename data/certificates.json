@@ -10,11 +10,227 @@
   },
   {
     "id": "cert-002",
-    "title": "Aspire Leadership Program (Cohort 3)",
+    "title": "Introduction to Bioinformatics; Tools, Databases, and Applications",
+    "issuer": "ScientificHubX",
+    "category": "Bioinformatics",
+    "date": "April 2026",
+    "file": "assets/certificates/bioinformatics/scientifichubx-intro-bioinformatics-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-003",
+    "title": "Reverse and complementary DNA (DNA, RNA) sequencing using R",
+    "issuer": "Coursera Project Network",
+    "category": "Bioinformatics",
+    "date": "August 2026",
+    "file": "assets/certificates/bioinformatics/Reverse and complementary DNA (DNA, RNA) sequencing using R.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-004",
+    "title": "Simulation of Covid-19 Testing Process Using R Simmer",
+    "issuer": "Coursera Project Network",
+    "category": "Bioinformatics",
+    "date": "August 2026",
+    "file": "assets/certificates/bioinformatics/Coursera Covid 19 lab stimulation PRojecft.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-005",
+    "title": "Unleash Your Potential: AI Fundamentals",
+    "issuer": "University of Bristol",
+    "category": "Professional",
+    "date": "August 2026",
+    "file": "assets/certificates/professional/bristol-ai-fundamentals-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-006",
+    "title": "Writing in the Sciences",
+    "issuer": "Stanford University (Coursera)",
+    "category": "Professional",
+    "date": "July 2026",
+    "file": "assets/certificates/professional/writing in the science.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-007",
+    "title": "How to Write a Review Paper",
+    "issuer": "Collab & Rise Global Society",
+    "category": "Professional",
+    "date": "June 2026",
+    "file": "assets/certificates/professional/write review paper.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-008",
+    "title": "Building your portfolio with Github",
+    "issuer": "Global Research Innovation Network (GRIN)",
+    "category": "Professional",
+    "date": "June 2026",
+    "file": "assets/certificates/professional/GitHub webinar.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-009",
+    "title": "Aspire Leadership Awareness Program",
+    "issuer": "Aspire Institute, NYLP, & AFPGMI",
+    "category": "Professional",
+    "date": "April 2026",
+    "file": "assets/certificates/professional/Aspire Leadership.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-010",
+    "title": "Aspire Leaders Program (Cohort 3)",
     "issuer": "Aspire Institute",
     "category": "Professional",
     "date": "July 2026",
-    "file": "assets/certificates/professional/aspire-leadership-2026.pdf",
+    "file": "assets/certificates/professional/aspire-leaders-cohort3-2026.pdf",
     "featured": true
+  },
+  {
+    "id": "cert-011",
+    "title": "Digital PCR 101",
+    "issuer": "Bio-Rad Academy",
+    "category": "Laboratory",
+    "date": "August 2026",
+    "file": "assets/certificates/laboratory/biorad-digital-pcr-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-012",
+    "title": "DNA Extraction from Biopsy Samples & Gene Amplification",
+    "issuer": "BJ Micro Lab",
+    "category": "Laboratory",
+    "date": "July 2026",
+    "file": "assets/certificates/laboratory/bjmicrolab-dna-extraction-2026.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-013",
+    "title": "Good Clinical Practice",
+    "issuer": "NIDA Clinical Trials Network",
+    "category": "Laboratory",
+    "date": "June 2026",
+    "file": "assets/certificates/laboratory/good-clinical-practice-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-014",
+    "title": "Unlocking Albumin Creatinine Ratio (UACR)",
+    "issuer": "Erba Mannheim and Transasia",
+    "category": "Laboratory",
+    "date": "April 2026",
+    "file": "assets/certificates/laboratory/uarc.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-015",
+    "title": "Basic Medical Laboratory Skills: Lab Safety",
+    "issuer": "ASCP",
+    "category": "Laboratory",
+    "date": "August 2026",
+    "file": "assets/certificates/laboratory/Basic Medical Laboratory Skills.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-016",
+    "title": "PCR Skills Development",
+    "issuer": "Khyber Medical University",
+    "category": "Laboratory",
+    "date": "November 2025",
+    "file": "assets/certificates/laboratory/Farhan Ali PCR Workshop.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-017",
+    "title": "Laboratory Biosafety & Biosecurity",
+    "issuer": "Khyber Medical University",
+    "category": "Laboratory",
+    "date": "November 2025",
+    "file": "assets/certificates/laboratory/Advanced Clinical Safety HandsOn Biosafety Training at KMU.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-018",
+    "title": "Blood Film Morphology",
+    "issuer": "The University of Western Australia (Coursera)",
+    "category": "Laboratory",
+    "date": "April 2026",
+    "file": "assets/certificates/laboratory/uwa-blood-film-morphology-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-019",
+    "title": "Introduction to Genomic Technologies",
+    "issuer": "Johns Hopkins University (Coursera)",
+    "category": "Genomics",
+    "date": "April 2026",
+    "file": "assets/certificates/genomics/jhu-intro-genomics-2026.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-020",
+    "title": "American Society for Clinical Pathology (ASCP) Member",
+    "issuer": "ASCP",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/Ascp.pdf",
+    "featured": true
+  },
+  {
+    "id": "cert-021",
+    "title": "American Society for Microbiology (ASM) Contributing Member",
+    "issuer": "ASM",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/asm.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-022",
+    "title": "Association for Molecular Pathology (AMP) Associate Member",
+    "issuer": "AMP",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/AMP Member Community.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-023",
+    "title": "American Association for Cancer Research (AACR) Affiliate Member",
+    "issuer": "AACR",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/AACR Membership.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-024",
+    "title": "African Society for Laboratory Medicine (ASLM) Friends of ASLM",
+    "issuer": "ASLM",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/ASlm membership_certificate.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-025",
+    "title": "BioImaging North America (BINA) Community Member",
+    "issuer": "BINA",
+    "category": "Memberships",
+    "date": "Active",
+    "file": "assets/certificates/memberships/Bioimagining_North America.pdf",
+    "featured": false
+  },
+  {
+    "id": "cert-026",
+    "title": "NORD Students for Rare",
+    "issuer": "National Organization for Rare Disorders",
+    "category": "Memberships",
+    "date": "August 2026",
+    "file": "assets/certificates/memberships/nord-membership-2026.pdf",
+    "featured": false
   }
 ]
