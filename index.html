@@ -3,46 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Ali - Medical Laboratory Technologist</title>
-    
-    <!-- This is the corrected CSS link pointing to your css folder -->
+    <title>Farhan Ali | Medical Laboratory Technologist</title>
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="#profile" class="skip-link">Skip to content</a>
-    <header class="site-header">
-        <nav class="nav-inner">
-            <a href="#profile">FA Farhan Ali</a>
-            <a href="#lab">Lab & Genomics</a>
-            <a href="#profile-section">Profile</a>
-            <a href="#clinical">Clinical</a>
-            <a href="#research">Research</a>
-            <a href="#credentials">Credentials</a>
-            <a href="#">Download CV</a>
-        </nav>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">FA.</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clinical">Clinical</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#credentials">Credentials</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="profile-section">
-        <section class="intro">
-            <p>Specimen Research Profile Status Seeking MPhil / MS Placement</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="subtitle">Medical Laboratory Technologist & Computational Biologist</p>
             <h1>Farhan Ali</h1>
-            <h2>Medical Laboratory Technologist — Computational Biology</h2>
-            
-            <p>I work at the interface of the bench and the terminal: running confirmatory diagnostics on real patient specimens by day, and writing Python and R pipelines that annotate genomic variants by night. My interest is translational hematology — using multi-omic data and computational tools to sharpen the diagnosis and management of chronic hemoglobinopathies such as beta-thalassemia, and I'm now looking for a Master's or MPhil research group where clinical pathology and bioinformatics meet.</p>
-            
-            <div class="actions">
-                <a href="#">Get in touch</a>
-                <a href="#research">View research</a>
+            <p class="hero-text">Bridging the gap between the wet lab bench and the terminal. I specialize in confirmatory diagnostics, multi-omic data analysis, and developing bioinformatics pipelines to sharpen the diagnosis of chronic hemoglobinopathies.</p>
+            <div class="hero-buttons">
+                <a href="#research" class="btn btn-primary">View My Research</a>
+                <a href="#credentials" class="btn btn-secondary">See Credentials</a>
             </div>
-            
-            <div class="social-links">
-                <a href="https://github.com/farhanali-researcher"><i class="fab fa-github"></i></a>
+            <div class="social-icons">
+                <a href="https://github.com/farhanali-researcher" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <h3>Education</h3>
+                    <p><strong>BS in Medical Laboratory Technology</strong></p>
+                    <p>Institute of Paramedical Sciences, Khyber Medical University</p>
+                    <p class="highlight">Cumulative GPA: 3.69 (4.0 in 7th & 8th Semesters)</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-award icon"></i>
+                    <h3>Awards & Honors</h3>
+                    <p>Recipient of the prestigious <strong>Stoori Da Pakhtunkhwa</strong> award from the Elementary and Secondary Education Department (KP).</p>
+                    <p>Awarded under the Prime Minister's Laptop Scheme for academic excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Experience -->
+    <section id="clinical" class="section">
+        <div class="container">
+            <h2 class="section-title">Clinical Expertise</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Medical Laboratory Technologist</h3>
+                        <h4>City Medical Welfare Laboratory</h4>
+                        <p>Managing day-to-day wet lab protocols, utilizing instrumentation such as the URIT-810 Semi-Auto Chemistry Analyzer, and ensuring rigorous quality control in patient diagnostics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Clinical Residency Rotations</h3>
+                        <h4>Lady Reading Hospital MTI Peshawar</h4>
+                        <p>Completed intensive rotations across Hematology, Microbiology, Chemical Pathology, Histopathology, Serology, and the Regional Blood Centre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Bioinformatics -->
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Research & Computational Biology</h2>
+            
+            <div class="research-card">
+                <h3>Primary Research Focus</h3>
+                <p><strong>Thesis:</strong> "Psychosocial difficulties, Health-Related Quality of life, And Caregiver Burden in Children with Transfusion-Dependent Β-Thalassemia"</p>
+                <p><em>Co-authored manuscript submitted to Thalassemia Reports. Conducted extensive statistical analysis utilizing SPSS for independent t-tests, ANOVA, and Pearson correlation analyses.</em></p>
+            </div>
+
+            <h3 class="subsection-title">Bioinformatics Toolkit</h3>
+            <div class="skills-grid">
+                <div class="skill-tag"><i class="fab fa-r-project"></i> R & RStudio (Biostrings, ggplot2)</div>
+                <div class="skill-tag"><i class="fab fa-linux"></i> Linux & Bash Scripting</div>
+                <div class="skill-tag"><i class="fas fa-dna"></i> Genomic Sequence Analysis</div>
+                <div class="skill-tag"><i class="fas fa-database"></i> NCBI, BLAST, UniProt</div>
+                <div class="skill-tag"><i class="fas fa-cube"></i> Protein Modeling (AlphaFold)</div>
+                <div class="skill-tag"><i class="fas fa-chart-bar"></i> SPSS Statistical Modeling</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials & Affiliations -->
+    <section id="credentials" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Affiliations & Certifications</h2>
+            <div class="affiliations-grid">
+                <div class="affiliation-item">
+                    <i class="fas fa-microscope"></i>
+                    <p>American Society for Clinical Pathology (ASCP)</p>
+                </div>
+                <div class="affiliation-item">
+                    <i class="fas fa-globe-africa"></i>
+                    <p>African Society for Laboratory Medicine (ASLM)</p>
+                </div>
+                <div class="affiliation-item">
+                    <i class="fas fa-vial"></i>
+                    <p>American Association for Cancer Research (AACR)</p>
+                </div>
+                <div class="affiliation-item">
+                    <i class="fas fa-tint"></i>
+                    <p>British Society for Haematology (BSH)</p>
+                </div>
+                <div class="affiliation-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <p>Aspire Leaders Program & GCI World Programs</p>
+                </div>
+                <div class="affiliation-item">
+                    <i class="fas fa-certificate"></i>
+                    <p>Bioinformatics for Biologists (Wellcome Connecting Science)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Farhan Ali. Specimen Research Profile.</p>
+            <p>Designed for prospective MPhil & MS placements.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
