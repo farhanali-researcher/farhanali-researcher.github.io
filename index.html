@@ -1,161 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Ali | Medical Laboratory Technologist</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Farhan Ali | Portfolio</title>
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#030712',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #030712;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* Aurora Mesh Gradient Background */
+        .aurora-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+            background: #030712;
+        }
+        
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.5;
+            animation: float 20s infinite ease-in-out alternate;
+        }
+
+        .orb-1 { width: 50vw; height: 50vw; background: #0ea5e9; top: -10%; left: -10%; animation-delay: 0s; }
+        .orb-2 { width: 40vw; height: 40vw; background: #10b981; bottom: -10%; right: -10%; animation-delay: -5s; }
+        .orb-3 { width: 45vw; height: 45vw; background: #8b5cf6; top: 40%; left: 30%; animation-delay: -10s; }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(10vw, 10vh) scale(1.2); }
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+        }
+        
+        .glass-card:hover {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.15), inset 0 0 20px rgba(255, 255, 255, 0.02);
+            transform: translateY(-4px);
+        }
+
+        .glass-nav {
+            background: rgba(3, 7, 18, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(135deg, #34d399, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Profile Glow Animation */
+        .profile-wrapper {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #10b981, #0ea5e9, #8b5cf6, #10b981);
+            background-size: 400%;
+            z-index: -1;
+            animation: spin-glow 4s linear infinite;
+            filter: blur(8px);
+            opacity: 0.8;
+        }
+        
+        .profile-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #10b981, #0ea5e9, #8b5cf6, #10b981);
+            background-size: 400%;
+            z-index: -1;
+            animation: spin-glow 4s linear infinite;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #030712;
+            z-index: 10;
+        }
+
+        @keyframes spin-glow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 400% 50%; }
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Staggered delays */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
 </head>
-<body>
+<body class="antialiased selection:bg-emerald-500 selection:text-white">
 
-    <!-- Navigation -->
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">FA.</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#clinical">Clinical</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#credentials">Credentials</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Aurora Background -->
+    <div class="aurora-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="subtitle">Medical Laboratory Technologist & Computational Biologist</p>
-            <h1>Farhan Ali</h1>
-            <p class="hero-text">Bridging the gap between the wet lab bench and the terminal. I specialize in confirmatory diagnostics, multi-omic data analysis, and developing bioinformatics pipelines to sharpen the diagnosis of chronic hemoglobinopathies.</p>
-            <div class="hero-buttons">
-                <a href="#research" class="btn btn-primary">View My Research</a>
-                <a href="#credentials" class="btn btn-secondary">See Credentials</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/farhanali-researcher" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+    <!-- Sticky Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="font-heading font-bold text-2xl tracking-wider text-gradient uppercase">Farhan Ali</a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+                <a href="#credentials" class="hover:text-emerald-400 transition-colors">Credentials</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- About Section -->
-    <section id="about" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Academic Background</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <h3>Education</h3>
-                    <p><strong>BS in Medical Laboratory Technology</strong></p>
-                    <p>Institute of Paramedical Sciences, Khyber Medical University</p>
-                    <p class="highlight">Cumulative GPA: 3.69 (4.0 in 7th & 8th Semesters)</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-award icon"></i>
-                    <h3>Awards & Honors</h3>
-                    <p>Recipient of the prestigious <strong>Stoori Da Pakhtunkhwa</strong> award from the Elementary and Secondary Education Department (KP).</p>
-                    <p>Awarded under the Prime Minister's Laptop Scheme for academic excellence.</p>
+    <!-- Main Content -->
+    <main class="relative z-10 pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col gap-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="grid md:grid-cols-12 gap-12 items-center min-h-[70vh] reveal active">
+            <div class="md:col-span-5 flex justify-center">
+                <div class="profile-wrapper">
+                    <!-- Referencing local profile.jpg -->
+                    <img src="profile.jpg" alt="Farhan Ali" class="profile-img shadow-2xl" onerror="this.src='https://ui-avatars.com/api/?name=Farhan+Ali&background=0D8ABC&color=fff&size=280'">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Clinical Experience -->
-    <section id="clinical" class="section">
-        <div class="container">
-            <h2 class="section-title">Clinical Expertise</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Medical Laboratory Technologist</h3>
-                        <h4>City Medical Welfare Laboratory</h4>
-                        <p>Managing day-to-day wet lab protocols, utilizing instrumentation such as the URIT-810 Semi-Auto Chemistry Analyzer, and ensuring rigorous quality control in patient diagnostics.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Clinical Residency Rotations</h3>
-                        <h4>Lady Reading Hospital MTI Peshawar</h4>
-                        <p>Completed intensive rotations across Hematology, Microbiology, Chemical Pathology, Histopathology, Serology, and the Regional Blood Centre.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research & Bioinformatics -->
-    <section id="research" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Research & Computational Biology</h2>
             
-            <div class="research-card">
-                <h3>Primary Research Focus</h3>
-                <p><strong>Thesis:</strong> "Psychosocial difficulties, Health-Related Quality of life, And Caregiver Burden in Children with Transfusion-Dependent Β-Thalassemia"</p>
-                <p><em>Co-authored manuscript submitted to Thalassemia Reports. Conducted extensive statistical analysis utilizing SPSS for independent t-tests, ANOVA, and Pearson correlation analyses.</em></p>
-            </div>
-
-            <h3 class="subsection-title">Bioinformatics Toolkit</h3>
-            <div class="skills-grid">
-                <div class="skill-tag"><i class="fab fa-r-project"></i> R & RStudio (Biostrings, ggplot2)</div>
-                <div class="skill-tag"><i class="fab fa-linux"></i> Linux & Bash Scripting</div>
-                <div class="skill-tag"><i class="fas fa-dna"></i> Genomic Sequence Analysis</div>
-                <div class="skill-tag"><i class="fas fa-database"></i> NCBI, BLAST, UniProt</div>
-                <div class="skill-tag"><i class="fas fa-cube"></i> Protein Modeling (AlphaFold)</div>
-                <div class="skill-tag"><i class="fas fa-chart-bar"></i> SPSS Statistical Modeling</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Credentials & Affiliations -->
-    <section id="credentials" class="section">
-        <div class="container">
-            <h2 class="section-title">Professional Affiliations & Certifications</h2>
-            <div class="affiliations-grid">
-                <div class="affiliation-item">
-                    <i class="fas fa-microscope"></i>
-                    <p>American Society for Clinical Pathology (ASCP)</p>
+            <div class="md:col-span-7 flex flex-col gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="text-emerald-400 font-semibold tracking-widest text-sm uppercase mb-2">Medical Laboratory Technologist</h2>
+                    <h1 class="font-heading text-5xl md:text-7xl font-bold mb-4">Hi, I'm <span class="text-gradient">Farhan Ali</span>.</h1>
+                    <p class="text-xl text-gray-400 font-light max-w-2xl">
+                        Bridging the gap between the wet lab bench and the computational terminal. I specialize in confirmatory diagnostics, multi-omic data analysis, and developing bioinformatics pipelines, seeking to advance translational hematology research.
+                    </p>
                 </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-globe-africa"></i>
-                    <p>African Society for Laboratory Medicine (ASLM)</p>
-                </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-vial"></i>
-                    <p>American Association for Cancer Research (AACR)</p>
-                </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-tint"></i>
-                    <p>British Society for Haematology (BSH)</p>
-                </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <p>Aspire Leaders Program & GCI World Programs</p>
-                </div>
-                <div class="affiliation-item">
-                    <i class="fas fa-certificate"></i>
-                    <p>Bioinformatics for Biologists (Wellcome Connecting Science)</p>
+                
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start mt-4">
+                    <a href="mailto:farhan.ali@example.com?subject=Opportunity%20Inquiry" class="px-6 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-obsidian font-semibold transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)]">
+                        <i class="fas fa-envelope mr-2"></i> Contact Me
+                    </a>
+                    <a href="https://github.com/farhanali-researcher" target="_blank" class="px-6 py-3 rounded-full glass-card hover:bg-white/10 font-medium transition-all">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/farhanali" target="_blank" class="px-6 py-3 rounded-full glass-card hover:bg-white/10 font-medium transition-all">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Farhan Ali. Specimen Research Profile.</p>
-            <p>Designed for prospective MPhil & MS placements.</p>
-        </div>
-    </footer>
+        <!-- Academic Profile & Summary -->
+        <section class="reveal">
+            <h3 class="font-heading text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-graduation-cap text-emerald-400"></i> Academic Profile
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="text-emerald-400 text-sm font-semibold mb-1">Dec 2025 - Aug 2026 (Completion)</div>
+                    <h4 class="text-xl font-bold mb-2">BS Medical Laboratory Technology</h4>
+                    <p class="text-gray-400 mb-4">Institute of Paramedical Sciences, Khyber Medical University, Peshawar, Pakistan</p>
+                    <ul class="list-disc list-inside text-sm text-gray-300 space-y-2">
+                        <li>Cumulative GPA: 3.69</li>
+                        <li>Achieved a perfect 4.0 GPA in the 7th and 8th semesters.</li>
+                        <li>Undergraduate Thesis on Transfusion-Dependent Β-Thalassemia.</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="text-emerald-400 text-sm font-semibold mb-1">Honors & Awards</div>
+                    <h4 class="text-xl font-bold mb-2">Academic Recognitions</h4>
+                    <ul class="space-y-4 mt-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-award text-blue-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-200">Stoori Da Pakhtunkhwa Award</strong>
+                                <span class="text-sm text-gray-400">Awarded by the Elementary and Secondary Education Department of Khyber Pakhtunkhwa.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-laptop text-blue-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-gray-200">Prime Minister's Laptop Scheme</strong>
+                                <span class="text-sm text-gray-400">Awarded a laptop in recognition of academic performance.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-</body>
-</html>
+        <!-- Practical / Clinical Experience -->
+        <section id="experience" class="reveal">
+            <h3 class="font-heading text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-microscope text-blue-400"></i> Clinical Experience
+            </h3>
+            <div class="space-y-6">
+                <!-- Role 1 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all"></div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold">Medical Laboratory Technologist</h4>
+                            <p class="text-emerald-400">City Medical Welfare Laboratory</p>
+                        </div>
+                        <div class="text-gray-400 text-sm md:text-right mt-2 md:mt-0">
+                            Peshawar, Pakistan<br>Dec 2025 - Aug 2026
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                        <li>Operated clinical laboratory instrumentation, including the URIT-810 Semi-Auto Chemistry Analyzer.</li>
+                        <li>Executed routine and confirmatory diagnostic wet lab protocols under the supervision of the Chairman and Administrator.</li>
+                        <li>Maintained strict calibration and quality control standards.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition-all"></div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <h4 class="text-2xl font-bold">Clinical Residency Rotations</h4>
+                            <p class="text-emerald-400">Lady Reading Hospital MTI Peshawar</p>
+                        </div>
+                        <div class="text-gray-400 text-sm md:text-right mt-2 md:mt-0">
+                            Peshawar, Pakistan<br>Dec 2025 - Aug 2026
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 mt-4">
+                        <li>Completed intensive departmental rotations in Hematology, Microbiology, Chemical Pathology, Histopathology, and Serology.</li>
+                        <li>Acquired extensive practical exposure at the Regional Blood Centre.</li>
+                    </ul>
+                </div>
+                
+                <!-- Role 3 (Upcoming) -->
+                <div class="glass-card p-8 rounded-2xl border-dashed border-emerald-500/30">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-300">Upcoming: MLT Intern</h4>
+                            <p class="text-gray-400">Alkhidmat Blood Bank and Diagnostic Center</p>
+                        </div>
+                        <div class="text-emerald-500/80 text-sm font-medium mt-2 md:mt-0 border border-emerald-500/30 px-3 py-1 rounded-full">
+                            Starting Sept 2026
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Research -->
+        <section id="projects" class="reveal">
+            <h3 class="font-heading text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-network-wired text-purple-400"></i> Projects & Research
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Research Domain -->
+                <div class="space-y-6">
+                    <h4 class="text-xl font-semibold text-gray-200 border-b border-white/10 pb-2">Domain & Clinical Research</h4>
+                    
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-2">Undergraduate Thesis / Manuscript</div>
+                        <h5 class="text-lg font-bold mb-2">Psychosocial difficulties, Health-Related Quality of life, And Caregiver Burden in Children with Transfusion-Dependent Β-Thalassemia</h5>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Investigated the broad psychosocial impacts of Beta-Thalassemia. Conducted rigorous statistical modeling using SPSS (independent t-tests, ANOVA, Pearson correlations).
+                        </p>
+                        <div class="text-xs px-3 py-1 bg-white/5 rounded-full inline-block border border-white/10">Submitted to Thalassemia Reports (Aug 2026)</div>
+                    </div>
+                </div>
+
+                <!-- Computational Projects -->
+                <div class="space-y-6">
+                    <h4 class="text-xl font-semibold text-gray-200 border-b border-white/10 pb-2">Technical & Computational</h4>
+                    
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">Bioinformatics & Simulation</div>
+                        <h5 class="text-lg font-bold mb-2">Genomic Workflows & Lab Simulation in R</h5>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Developed R scripts using Biostrings, simmer, and tidyverse to manipulate biological DNA sequences and digitally model PCR laboratory workflows.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs px-2 py-1 bg-blue-500/20 text-blue-300 rounded">RStudio</span>
+                            <span class="text-xs px-2 py-1 bg-blue-500/20 text-blue-300 rounded">Biostrings</span>
+                            <span class="text-xs px-2 py-1 bg-blue-500/20 text-blue-300 rounded">Linux / WSL</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl">
+                        <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">Web Graphics & Tracking</div>
+                        <h5 class="text-lg font-bold mb-2">3D Particle Systems & Gesture Tracking</h5>
+                        <p class="text-sm text-gray-400 mb-3">
+                            Explored interactive web graphics development integrating Three.js for 3D rendering with MediaPipe for hand gesture tracking.
+                        </p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="text-xs px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded">JavaScript</span>
+                            <span class="text-xs px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded">Three.js</span>
+                            <span class="text-xs px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded">MediaPipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Gallery -->
+        <section id="credentials" class="reveal">
+            <h3 class="font-heading text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-certificate text-emerald-400"></i> Certifications & Courses
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tech / Data -->
+                <div class="glass-card p-6 rounded-xl">
+                    <h4 class="text-emerald-400 font-semibold mb-4 border-b border-white/10 pb-2">Technical & Computing</h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="Bioinformatics%20for%20Biologists%20-%20Wellcome%20Connecting%20Science.pdf" target="_blank" class="group block">
+                                <span class="block text-sm font-bold text-gray-200 group-hover:text-white transition-colors">Bioinformatics for Biologists</span>
+                                <span class="block text-xs text-gray-400">Wellcome Connecting Science</span
