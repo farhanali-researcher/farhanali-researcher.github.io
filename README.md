@@ -6,7 +6,7 @@
 
 *Bridging the bench and the terminal — from confirmatory diagnostics to genomic variant annotation.*
 
-[![Live Site](https://img.shields.io/badge/live-farhanali.dev-14213D?style=for-the-badge)](#)
+[![Live Site](https://farhanali-researcher.github.io/)](#)
 [![License](https://img.shields.io/badge/license-MIT-1F5C54?style=for-the-badge)](#license)
 [![Made with](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-8B2635?style=for-the-badge)](#tech-stack)
 
