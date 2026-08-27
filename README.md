@@ -37,6 +37,17 @@ This platform is built on a strictly decoupled, front-end-only architecture, ens
 
 ---
 
+## **Connect & Collaborate**
+Actively seeking Master's and MPhil research opportunities where clinical pathology and bioinformatics meet.
+
+Email: farhanali.mlt010@gmail.com
+
+LinkedIn: linkedin.com/in/farhanali010
+
+Live Site: farhanali-researcher.github.io
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -54,12 +65,3 @@ This platform is built on a strictly decoupled, front-end-only architecture, ens
 │   └── app.js             # Data fetching and UI interaction logic
 ├── index.html             # Main application entry point
 └── README.md              # Project documentation
-
-## **Connect & Collaborate**
-Actively seeking Master's and MPhil research opportunities where clinical pathology and bioinformatics meet.
-
-Email: farhanali.mlt010@gmail.com
-
-LinkedIn: linkedin.com/in/farhanali010
-
-Live Site: farhanali-researcher.github.io
