@@ -56,4 +56,18 @@
     "githubLink": "https://github.com/farhanali-researcher",
     "featured": true
   },
+  {
+    "id": "proj-005",
+    "title": "Interactive 3D Particle System & Gesture Tracking",
+    "date": "December 2025",
+    "problem": "Explored real-time computational graphics by engineering an interactive 3D web environment. Integrated Three.js for dynamic particle rendering and MediaPipe for live spatial hand-gesture tracking.",
+    "tools": [
+      "JavaScript",
+      "Three.js",
+      "MediaPipe",
+      "Computer Vision"
+    ],
+    "githubLink": "https://github.com/farhanali-researcher",
+    "featured": false
+  }
 ]
