@@ -41,10 +41,7 @@ This platform is built on a strictly decoupled, front-end-only architecture, ens
 Actively seeking Master's and MPhil research opportunities where clinical pathology and bioinformatics meet.
 
 Email: farhanali.mlt010@gmail.com
-
-LinkedIn: linkedin.com/in/farhanali010
-
-Live Site: farhanali-researcher.github.io
+LinkedIn: https://www.linkedin.com/in/farhanali010
 
 ---
 
