@@ -6,7 +6,8 @@
     "category": "Bioinformatics",
     "date": "August 2026",
     "file": "assets/certificates/bioinformatics/wellcome-bioinformatics-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Completed intensive training in Linux command-line operations, Bash scripting, and R programming tailored specifically for biological data analysis and genomic pipelines."
   },
   {
     "id": "cert-002",
@@ -15,7 +16,8 @@
     "category": "Bioinformatics",
     "date": "April 2026",
     "file": "assets/certificates/bioinformatics/scientifichubx-intro-bioinformatics-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Explored essential bioinformatics databases and tools, focusing on sequence alignment, protein structure prediction, and computational applications in molecular biology."
   },
   {
     "id": "cert-003",
@@ -24,7 +26,8 @@
     "category": "Bioinformatics",
     "date": "August 2026",
     "file": "assets/certificates/bioinformatics/Reverse and complementary DNA (DNA, RNA) sequencing using R.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Developed automated workflows in R utilizing specialized packages like Biostrings to efficiently process, reverse, and complement DNA and RNA sequences."
   },
   {
     "id": "cert-004",
@@ -33,7 +36,8 @@
     "category": "Bioinformatics",
     "date": "August 2026",
     "file": "assets/certificates/bioinformatics/Coursera Covid 19 lab stimulation PRojecft.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Engineered a discrete-event simulation model using the R 'simmer' package to evaluate, optimize, and analyze Covid-19 laboratory testing workflows and resource allocation."
   },
   {
     "id": "cert-005",
@@ -42,7 +46,8 @@
     "category": "Professional",
     "date": "August 2026",
     "file": "assets/certificates/professional/bristol-ai-fundamentals-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Gained foundational knowledge in Artificial Intelligence principles, algorithms, and their potential applications in automating and enhancing data-driven scientific processes."
   },
   {
     "id": "cert-006",
@@ -51,7 +56,8 @@
     "category": "Professional",
     "date": "July 2026",
     "file": "assets/certificates/professional/writing in the science.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Mastered the principles of effective scientific communication, focusing on structuring research papers, grant writing, and conveying complex biomedical concepts clearly."
   },
   {
     "id": "cert-007",
@@ -60,7 +66,8 @@
     "category": "Professional",
     "date": "June 2026",
     "file": "assets/certificates/professional/write review paper.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Acquired specialized methodologies for conducting comprehensive literature reviews, synthesizing clinical data, and formatting scientific findings for academic publication."
   },
   {
     "id": "cert-008",
@@ -69,7 +76,8 @@
     "category": "Professional",
     "date": "June 2026",
     "file": "assets/certificates/professional/GitHub webinar.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Demonstrated proficiency in version control and digital portfolio management using Git and GitHub to transparently showcase computational biology code and projects."
   },
   {
     "id": "cert-009",
@@ -78,7 +86,8 @@
     "category": "Professional",
     "date": "April 2026",
     "file": "assets/certificates/professional/Aspire Leadership.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Participated in an introductory leadership awareness initiative focused on global perspectives, professional networking, and academic development."
   },
   {
     "id": "cert-010",
@@ -87,7 +96,8 @@
     "category": "Professional",
     "date": "July 2026",
     "file": "assets/certificates/professional/aspire-leaders-cohort3-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Completed a rigorous, multi-module leadership development program designed by Harvard faculty for high-potential first-generation college students globally."
   },
   {
     "id": "cert-011",
@@ -96,7 +106,8 @@
     "category": "Laboratory",
     "date": "August 2026",
     "file": "assets/certificates/laboratory/biorad-digital-pcr-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Trained in advanced digital PCR (dPCR) principles, precise experimental design, and the highly sensitive absolute quantification of nucleic acids for molecular diagnostics."
   },
   {
     "id": "cert-012",
@@ -105,7 +116,8 @@
     "category": "Laboratory",
     "date": "July 2026",
     "file": "assets/certificates/laboratory/bjmicrolab-dna-extraction-2026.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Gained hands-on expertise in molecular diagnostic wet lab protocols, focusing on high-yield DNA extraction from biopsy tissues and subsequent targeted gene amplification."
   },
   {
     "id": "cert-013",
@@ -114,7 +126,8 @@
     "category": "Laboratory",
     "date": "June 2026",
     "file": "assets/certificates/laboratory/good-clinical-practice-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Certified in Good Clinical Practice (GCP) guidelines, ensuring rigorous ethical and scientific quality standards in designing, conducting, and recording clinical health trials."
   },
   {
     "id": "cert-014",
@@ -123,7 +136,8 @@
     "category": "Laboratory",
     "date": "April 2026",
     "file": "assets/certificates/laboratory/uarc.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Specialized training on the clinical significance, interpretation, and analytical laboratory methodologies for measuring Urine Albumin-to-Creatinine Ratio for the early detection of renal disease."
   },
   {
     "id": "cert-015",
@@ -132,7 +146,8 @@
     "category": "Laboratory",
     "date": "August 2026",
     "file": "assets/certificates/laboratory/Basic Medical Laboratory Skills.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Completed advanced training in essential laboratory safety protocols, biohazard management, and strict compliance with international clinical pathology standards."
   },
   {
     "id": "cert-016",
@@ -141,7 +156,8 @@
     "category": "Laboratory",
     "date": "November 2025",
     "file": "assets/certificates/laboratory/Farhan Ali PCR Workshop.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Participated in an intensive hands-on workshop to develop practical, bench-level skills in Polymerase Chain Reaction (PCR) assay execution and troubleshooting."
   },
   {
     "id": "cert-017",
@@ -150,7 +166,8 @@
     "category": "Laboratory",
     "date": "November 2025",
     "file": "assets/certificates/laboratory/Advanced Clinical Safety HandsOn Biosafety Training at KMU.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Mastered essential biosafety and biosecurity protocols for clinical environments, focusing on biological risk assessment and the secure handling of infectious agents."
   },
   {
     "id": "cert-018",
@@ -159,7 +176,8 @@
     "category": "Laboratory",
     "date": "April 2026",
     "file": "assets/certificates/laboratory/uwa-blood-film-morphology-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Advanced training in clinical hematology, focusing on the microscopic identification of blood cell morphology, anomalies, and the preliminary diagnosis of hematological disorders."
   },
   {
     "id": "cert-019",
@@ -168,7 +186,8 @@
     "category": "Genomics",
     "date": "April 2026",
     "file": "assets/certificates/genomics/jhu-intro-genomics-2026.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Explored modern high-throughput genomic sequencing technologies, microarrays, and the computational fundamentals required to analyze and interpret resulting biological datasets."
   },
   {
     "id": "cert-020",
@@ -177,7 +196,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/Ascp.pdf",
-    "featured": true
+    "featured": true,
+    "description": "Active member committed to continuous learning, certification excellence, and upholding global standards in laboratory medicine and patient care."
   },
   {
     "id": "cert-021",
@@ -186,7 +206,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/asm.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Contributing member engaging with the global microbiological community to stay current on infectious disease research and clinical pathogen identification advancements."
   },
   {
     "id": "cert-022",
@@ -195,7 +216,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/AMP Member Community.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Associate member focused on the clinical application, advancement, and integration of molecular diagnostics and genomic pathology."
   },
   {
     "id": "cert-023",
@@ -204,7 +226,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/AACR Membership.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Affiliate member connecting with international researchers dedicated to accelerating the prevention and cure of cancer through multi-omic scientific innovation."
   },
   {
     "id": "cert-024",
@@ -213,7 +236,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/ASlm membership_certificate.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Active participant supporting the enhancement of clinical laboratory networks, rapid diagnostics, and standardized healthcare access."
   },
   {
     "id": "cert-025",
@@ -222,7 +246,8 @@
     "category": "Memberships",
     "date": "Active",
     "file": "assets/certificates/memberships/Bioimagining_North America.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Community member exploring cutting-edge advancements in biological imaging technologies, microscopy, and complex image data processing methodologies."
   },
   {
     "id": "cert-026",
@@ -231,6 +256,7 @@
     "category": "Memberships",
     "date": "August 2026",
     "file": "assets/certificates/memberships/nord-membership-2026.pdf",
-    "featured": false
+    "featured": false,
+    "description": "Active student advocate supporting scientific research, clinical awareness, and policy advancements for rare genetic and hematological disorders."
   }
 ]
