@@ -4,7 +4,12 @@
     "title": "Clinical NGS Variant Annotator & Diagnostic Pipeline",
     "date": "August 2026",
     "problem": "Engineered an automated Python-based bioinformatics pipeline to ingest targeted NGS variant panels. Integrated the Ensembl REST API to filter out benign background SNPs and mapped disease-causing variants to severe hematological disorders.",
-    "tools": ["Python", "Ensembl API", "Bioinformatics", "Genomic Annotation"],
+    "tools": [
+      "Python",
+      "Ensembl API",
+      "Bioinformatics",
+      "Genomic Annotation"
+    ],
     "githubLink": "https://github.com/farhanali-researcher",
     "featured": true
   },
@@ -13,8 +18,42 @@
     "title": "Genomic Sequence Analysis & Annotation Pipeline",
     "date": "July 2026",
     "problem": "Engineered an automated pipeline using Python and Biopython for sequence analysis. Integrated BLAST algorithms with NCBI databases for precise gene-finding, translating complex biological datasets into reproducible R scripts (ggplot2) for statistical visualization.",
-    "tools": ["Python", "Biopython", "BLAST", "R (ggplot2)", "NCBI"],
+    "tools": [
+      "Python",
+      "Biopython",
+      "BLAST",
+      "R (ggplot2)",
+      "NCBI"
+    ],
     "githubLink": "https://github.com/farhanali-researcher",
     "featured": true
-  }
+  },
+  {
+    "id": "proj-003",
+    "title": "Clinical Laboratory Workflow Simulation (COVID-19)",
+    "date": "August 2026",
+    "problem": "Developed a discrete-event simulation model utilizing R and the simmer package to evaluate, optimize, and map COVID-19 testing laboratory workflows. Modeled resource allocation bottlenecks and analyzed specimen turnaround times (TAT).",
+    "tools": [
+      "R",
+      "simmer",
+      "simmer.plot",
+      "Workflow Optimization"
+    ],
+    "githubLink": "https://github.com/farhanali-researcher",
+    "featured": true
+  },
+  {
+    "id": "proj-004",
+    "title": "DNA/RNA Sequence Manipulation & Processing Pipeline",
+    "date": "August 2026",
+    "problem": "Designed automated sequence processing scripts in R using the Biostrings package. Created reproducible pipelines to efficiently parse, reverse, and complement complex biological sequences for downstream transcriptomic and genomic analysis.",
+    "tools": [
+      "R",
+      "Biostrings",
+      "tidyverse",
+      "Computational Biology"
+    ],
+    "githubLink": "https://github.com/farhanali-researcher",
+    "featured": true
+  },
 ]
