@@ -55,7 +55,7 @@ This platform is built on a strictly decoupled, front-end-only architecture, ens
 ├── index.html             # Main application entry point
 └── README.md              # Project documentation
 
-Connect & Collaborate
+## **Connect & Collaborate**
 Actively seeking Master's and MPhil research opportunities where clinical pathology and bioinformatics meet.
 
 Email: farhanali.mlt010@gmail.com
