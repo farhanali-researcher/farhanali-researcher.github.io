@@ -3,72 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farhan Ali | Elite Research Portfolio & Digital CV</title>
+    <title>Farhan Ali | Elite Research Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Subtle Ambient Background -->
+    <!-- Advanced Ambient Background -->
     <div class="ambient-bg">
+        <div class="tech-grid"></div>
         <div class="glow-orb orb-1"></div>
         <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
     </div>
 
+    <!-- Glass Navigation -->
     <nav class="glass-nav">
         <div class="nav-container">
-            <a href="#" class="logo">FARHAN ALI<span>_</span></a>
+            <a href="#" class="logo">FARHAN ALI<span class="dot">.</span></a>
             <div class="nav-links">
                 <a href="#about">Profile</a>
                 <a href="#clinical">Clinical</a>
                 <a href="#research">Research</a>
                 <a href="#credentials">Credentials</a>
             </div>
-            <a href="assets/documents/Farhan_Ali_CV.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+            <a href="assets/documents/Farhan_Ali_CV.pdf" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-download"></i>
+            </a>
         </div>
     </nav>
 
     <main class="wrapper">
         
-        <!-- Clean, Ordered Hero Section with Picture -->
+        <!-- Hero Section -->
         <section class="hero glass-panel">
             <div class="hero-content">
-                <div class="tag-badge">Medical Laboratory Technologist</div>
-                <h1 class="hero-title">Engineering the future of <span class="gradient-text">Precision Medicine</span></h1>
+                <div class="tag-badge">
+                    <span class="pulse-dot"></span> Medical Laboratory Technologist
+                </div>
+                <h1 class="hero-title">Engineering the future of <br><span class="gradient-text text-glow">Precision Medicine</span></h1>
                 <p class="hero-desc">Bridging clinical pathology with computational biology, multi-omics, and AI to transform genomic data into actionable clinical insights. Actively seeking Master's and MPhil research opportunities.</p>
                 <div class="hero-actions">
                     <a href="#about" class="btn btn-primary">Read Full Profile</a>
                     <div class="social-dock">
-                        <a href="mailto:farhanali.mlt010@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://linkedin.com/in/farhanali010" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/farhanali-researcher" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:farhanali.mlt010@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/farhanali010" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/farhanali-researcher" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image-wrapper">
+                <div class="image-glow-ring"></div>
                 <img src="assets/images/profile.jpg" alt="Farhan Ali" class="profile-pic">
             </div>
         </section>
 
-        <!-- Comprehensive About Section (Digital CV Replacement) -->
+        <!-- Comprehensive About Section -->
         <section id="about" class="section">
-            <h2 class="section-heading">01. / Comprehensive Professional Profile</h2>
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-heading">Comprehensive Professional Profile</h2>
+            </div>
             
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>Executive Summary</h3>
-                <p class="text-muted" style="margin-top: 1rem; line-height: 1.8;">
+            <div class="card highlight-card mb-2">
+                <h3 class="card-title-lg"><i class="fa-solid fa-user-astronaut section-icon"></i> Executive Summary</h3>
+                <p class="text-muted lead-text">
                     I am a dedicated Medical Laboratory Technologist specializing in the intersection of clinical pathology and computational biology. With a rigorous foundation in wet lab diagnostics and a growing expertise in bioinformatics, I focus on translational hematology—specifically utilizing multi-omic data and computational tools to improve the diagnosis and management of chronic hemoglobinopathies like beta-thalassemia. My dual capability allows me to confidently execute confirmatory diagnostics on the clinical bench while independently writing robust Python and R pipelines for genomic variant annotation and laboratory workflow simulations.
                 </p>
             </div>
 
             <div class="ordered-grid">
-                <div class="card">
-                    <i class="fa-solid fa-graduation-cap section-icon"></i>
-                    <h3>Academic Foundation</h3>
-                    <p class="text-muted" style="margin-bottom: 1rem;"><strong>BS Medical Laboratory Technology</strong><br>Institute of Paramedical Sciences, Khyber Medical University (KMU) | Peshawar, Pakistan</p>
-                    <ul class="clean-list">
+                <div class="card hover-glow">
+                    <h3><i class="fa-solid fa-graduation-cap section-icon"></i> Academic Foundation</h3>
+                    <div class="timeline-header">
+                        <strong>BS Medical Laboratory Technology</strong>
+                        <span class="accent-text">Khyber Medical University (KMU) | Peshawar, Pakistan</span>
+                    </div>
+                    <ul class="clean-list mt-1">
                         <li><strong>Academic Excellence:</strong> Graduated with a Cumulative GPA of 3.69/4.00, achieving a perfect 4.0 GPA in both the 7th and 8th advanced semesters.</li>
                         <li><strong>Honors & Awards:</strong> Recipient of the prestigious Stoori Da Pakhtunkhwa award from the Elementary and Secondary Education Department of Khyber Pakhtunkhwa.</li>
                         <li><strong>Recognition:</strong> Awarded a high-performance laptop under the Prime Minister's Laptop Scheme in recognition of outstanding academic merit.</li>
@@ -76,108 +89,117 @@
                     </ul>
                 </div>
                 
-                <div class="card">
-                    <i class="fa-solid fa-microchip section-icon"></i>
-                    <h3>Comprehensive Skill Matrix</h3>
+                <div class="card hover-glow">
+                    <h3><i class="fa-solid fa-microchip section-icon"></i> Comprehensive Skill Matrix</h3>
                     
-                    <h4 style="margin-top: 1rem; color: var(--text-primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Computational Biology & Data Science</h4>
+                    <h4 class="sub-heading mt-1">Computational Biology & Data Science</h4>
                     <div class="pill-group">
-                        <span class="pill">R & RStudio (Biostrings, simmer, ggplot2, tidyverse)</span>
-                        <span class="pill">Python Programming</span>
-                        <span class="pill">Linux OS, Bash Scripting & WSL</span>
-                        <span class="pill">NCBI, BLASTn, UniProt, ExPASy</span>
-                        <span class="pill">Protein Modeling (AlphaFold, SWISS-MODEL, PDB)</span>
-                        <span class="pill">Statistical Analysis (SPSS: ANOVA, t-tests, Pearson)</span>
-                        <span class="pill">3D Graphics (Three.js, MediaPipe)</span>
-                        <span class="pill">Git / GitHub Repositories</span>
-                        <span class="pill">Citation Managers (Mendeley, Zotero, EndNote)</span>
-                        <span class="pill">Remote Access (Chrome Remote Desktop, AnyDesk)</span>
+                        <span class="pill"><i class="fa-brands fa-r-project"></i> R & RStudio</span>
+                        <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="pill"><i class="fa-brands fa-linux"></i> Linux OS & Bash</span>
+                        <span class="pill">NCBI, BLASTn, UniProt</span>
+                        <span class="pill">AlphaFold & SWISS-MODEL</span>
+                        <span class="pill">SPSS (ANOVA, t-tests)</span>
+                        <span class="pill">Git / GitHub</span>
                     </div>
                     
-                    <h4 style="margin-top: 1.5rem; color: var(--text-primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Clinical Wet Lab Diagnostics</h4>
+                    <h4 class="sub-heading mt-2">Clinical Wet Lab Diagnostics</h4>
                     <div class="pill-group">
-                        <span class="pill">Automated Chemistry Analyzers (URIT-810)</span>
-                        <span class="pill">Molecular Diagnostics & PCR Workflows</span>
-                        <span class="pill">Clinical Hematology & Blood Film Morphology</span>
+                        <span class="pill">Automated Chemistry (URIT-810)</span>
+                        <span class="pill">Molecular Diagnostics (PCR)</span>
+                        <span class="pill">Clinical Hematology</span>
                         <span class="pill">Transfusion Medicine</span>
-                        <span class="pill">Clinical Microbiology & Serology</span>
-                        <span class="pill">Histopathology Preparation</span>
-                        <span class="pill">Stringent Quality Control (QC) Protocols</span>
+                        <span class="pill">Clinical Microbiology</span>
+                        <span class="pill">Histopathology</span>
+                        <span class="pill">Stringent QC Protocols</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Highly Detailed Clinical Track -->
+        <!-- Clinical Track -->
         <section id="clinical" class="section">
-            <h2 class="section-heading">02. / Clinical Deployments & Laboratory Operations</h2>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-heading">Clinical Deployments & Lab Operations</h2>
+            </div>
+            
             <div class="clinical-track">
                 
-                <div class="card track-card">
-                    <div class="track-header">
+                <div class="card track-card hover-glow">
+                    <div class="track-info">
+                        <span class="track-badge current">Current Role</span>
                         <h3>Medical Laboratory Technologist</h3>
-                        <span class="track-date">Current</span>
+                        <h4 class="company-name">City Medical Welfare Laboratory</h4>
+                        <p class="text-muted">Operating under the direct supervision of the laboratory's Chairman and Administrator, responsible for executing high-complexity diagnostic assays and ensuring the integrity of patient results.</p>
                     </div>
-                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">City Medical Welfare Laboratory</h4>
-                    <p class="text-muted" style="margin-bottom: 1rem;">Operating under the direct supervision of the laboratory's Chairman and Administrator, responsible for executing high-complexity diagnostic assays and ensuring the integrity of patient results.</p>
-                    <ul class="clean-list text-muted">
-                        <li><strong>Instrumentation Mastery:</strong> Independently operate, calibrate, and maintain clinical laboratory instrumentation, serving as the primary operator for the URIT-810 Semi-Auto Chemistry Analyzer.</li>
-                        <li><strong>Protocol Management:</strong> Execute daily wet lab protocols encompassing clinical chemistry, hematological profiling, and serological screening.</li>
-                        <li><strong>Quality Assurance:</strong> Implement rigorous daily quality control (QC) testing and proficiency protocols to guarantee diagnostic precision and compliance with clinical standards.</li>
-                    </ul>
+                    <div class="track-details">
+                        <ul class="clean-list">
+                            <li><strong>Instrumentation:</strong> Primary operator for the URIT-810 Semi-Auto Chemistry Analyzer.</li>
+                            <li><strong>Protocols:</strong> Execute daily wet lab protocols encompassing clinical chemistry, hematological profiling, and serology.</li>
+                            <li><strong>Quality Assurance:</strong> Implement rigorous daily QC testing and proficiency protocols.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="card track-card">
-                    <div class="track-header">
+                <div class="card track-card hover-glow">
+                    <div class="track-info">
+                        <span class="track-badge completed">Completed</span>
                         <h3>Clinical Residency Rotations</h3>
-                        <span class="track-date">Completed</span>
+                        <h4 class="company-name">Lady Reading Hospital MTI Peshawar</h4>
+                        <p class="text-muted">Successfully completed comprehensive, intensive clinical rotations across multiple high-volume diagnostic departments in one of the region's largest tertiary care hospitals.</p>
                     </div>
-                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Lady Reading Hospital MTI Peshawar</h4>
-                    <p class="text-muted" style="margin-bottom: 1rem;">Successfully completed comprehensive, intensive clinical rotations across multiple high-volume diagnostic departments in one of the region's largest tertiary care hospitals.</p>
-                    <ul class="clean-list text-muted">
-                        <li><strong>Hematology & Blood Bank:</strong> Extensive training in the Regional Blood Centre and Hematology department, mastering blood film morphology, cross-matching, and transfusion medicine protocols.</li>
-                        <li><strong>Pathology & Microbiology:</strong> Executed tissue processing in Histopathology, pathogen identification in Microbiology, and routine biochemical assays in Chemical Pathology.</li>
-                        <li><strong>Infectious Disease:</strong> Managed diagnostic workflows in Serology, contributing to rapid-response testing and patient screening.</li>
-                    </ul>
+                    <div class="track-details">
+                        <ul class="clean-list">
+                            <li><strong>Hematology & Blood Bank:</strong> Mastering blood film morphology, cross-matching, and transfusion protocols.</li>
+                            <li><strong>Pathology & Micro:</strong> Tissue processing, pathogen identification, and biochemical assays.</li>
+                            <li><strong>Infectious Disease:</strong> Managed diagnostic workflows in Serology for rapid-response testing.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="card track-card">
-                    <div class="track-header">
+                <div class="card track-card hover-glow">
+                    <div class="track-info">
+                        <span class="track-badge upcoming">Upcoming: Sept 2026</span>
                         <h3>Clinical Laboratory Intern</h3>
-                        <span class="track-date">Starts Sept 2026</span>
+                        <h4 class="company-name">Alkhidmat Blood Bank and Diagnostic Center</h4>
+                        <p class="text-muted">Selected for an upcoming clinical internship to further refine skills in comprehensive diagnostic workflows, advanced blood banking, and rapid-response testing protocols.</p>
                     </div>
-                    <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Alkhidmat Blood Bank and Diagnostic Center | Peshawar</h4>
-                    <p class="text-muted">Selected for an upcoming clinical internship to further refine skills in comprehensive diagnostic workflows, advanced blood banking, and rapid-response testing protocols.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Organized Dynamic Sections -->
+        <!-- Research Sections -->
         <section id="research" class="section">
-            <h2 class="section-heading">03. / Academic Research & Publications</h2>
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-heading">Academic Research & Publications</h2>
+            </div>
             
-            <div class="card track-card" style="margin-bottom: 2.5rem; border-left: 4px solid var(--primary-color);">
-                <div class="track-header">
-                    <h3>Undergraduate Thesis & Manuscript Submission</h3>
-                    <span class="track-date">Submitted August 2026</span>
-                </div>
-                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--text-primary);">" Psychosocial difficulties, Health-Related Quality of life, And Caregiver Burden in Children with Transfusion-Dependent Β-Thalassemia "</p>
-                <p class="text-muted" style="margin-bottom: 1rem;">Co-authored manuscript officially submitted for publication in the international journal <em>Thalassemia Reports</em>.</p>
-                <ul class="clean-list text-muted">
+            <div class="card featured-research mb-3">
+                <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured Thesis</div>
+                <h3 class="research-title">"Psychosocial difficulties, Health-Related Quality of life, And Caregiver Burden in Children with Transfusion-Dependent Β-Thalassemia"</h3>
+                <p class="research-meta">Submitted August 2026 | <em>Thalassemia Reports</em></p>
+                <ul class="clean-list mt-1">
                     <li><strong>Methodology:</strong> Designed and executed clinical data collection focusing on pediatric hematology and transfusion-dependent demographics.</li>
-                    <li><strong>Statistical Analysis:</strong> Leveraged SPSS to conduct rigorous biostatistical evaluations, including independent t-tests, Analysis of Variance (ANOVA), and Pearson correlation analyses to quantify caregiver burden and patient outcomes.</li>
+                    <li><strong>Statistical Analysis:</strong> Leveraged SPSS to conduct rigorous biostatistical evaluations, including independent t-tests, ANOVA, and Pearson correlation analyses.</li>
                     <li><strong>Mentorship:</strong> Conducted under the expert supervision of the esteemed Medical Laboratory Technology faculty at the Institute of Paramedical Sciences, KMU.</li>
                 </ul>
             </div>
 
-            <h3 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-laptop-code section-icon"></i> Computational Portfolio</h3>
+            <h3 class="subsection-heading"><i class="fa-solid fa-laptop-code"></i> Computational Portfolio</h3>
             <div id="projects-container" class="ordered-grid">
                 <!-- Injected via app.js -->
             </div>
         </section>
 
+        <!-- Credentials -->
         <section id="credentials" class="section">
-            <h2 class="section-heading">04. / Continuous Education & Credential Library</h2>
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-heading">Continuous Education & Credential Library</h2>
+            </div>
+            
             <div class="filters" id="cert-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="Genomics">Genomics</button>
@@ -194,15 +216,18 @@
         </section>
     </main>
 
-    <footer class="elite-footer glass-panel">
-        <h2 class="gradient-text">Farhan Ali</h2>
-        <p>Engineered for Precision Medicine.</p>
+    <footer class="elite-footer">
+        <div class="footer-content">
+            <h2 class="logo">FARHAN ALI<span class="dot">.</span></h2>
+            <p class="text-muted mt-1">Engineered for Precision Medicine & Computational Biology.</p>
+            <p class="copyright">© 2026 Farhan Ali. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Certificate Modal -->
     <div id="cert-modal" class="modal">
         <div class="modal-content glass-panel">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
             <div id="modal-body"></div>
         </div>
     </div>
